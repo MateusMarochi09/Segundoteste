@@ -6,6 +6,19 @@ def soma(a,b):
 def subtracao(a,b):
     return a - b
 
+## Terceira alteração no código
+print("Escolha a operação:")
+print("1. Soma")
+print("2. Subtração")
 
-print("Soma:", soma(5, 3))
-print("Subtração:", subtracao(5, 3))
+opcao = input("Opção: ")
+
+a = int(input("Digite o primeiro número: "))
+b = int(input("Digite o segundo número: "))
+
+if opcao == "1":
+    print("Resultado:", soma(a, b))
+elif opcao == "2":
+    print("Resultado:", subtracao(a, b))
+else:
+    print("Opção inválida")
